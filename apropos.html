@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos & Gouvernance - Institut Théophile Obenga</title>
+  <meta name="description" content="Découvrez la gouvernance, la direction exécutive et les chercheurs associés de l'Institut Théophile Obenga." />
+  
+  <!-- ═══ TAILWIND CSS via CDN ═══ -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { 
+            primary: '#003399', 
+            white: '#FFFFFF',
+            grayLight: '#F3F4F6'
+          },
+          fontFamily: { 
+            sans: ['"Times New Roman"', 'Times', 'serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-white text-primary font-sans text-[17px]">
+
+  <!-- ═══════════════════════════════════════
+       EN-TÊTE SIMPLIFIÉ
+  ════════════════════════════════════════ -->
+  <header class="bg-white border-b-4 border-primary sticky top-0 z-50 shadow-sm">
+    <div class="bg-primary text-white text-[15px] py-1.5 px-6 flex justify-between items-center">
+      <a href="index.html" class="hover:underline">← Retour à l'accueil</a>
+      <div class="flex items-center gap-6 font-semibold uppercase tracking-widest text-sm">
+        <a href="recherche.html" class="hover:text-white/75">Recherche</a>
+        <a href="adhesion.html" class="hover:text-white/75">Adhérer</a>
+        <a href="contact.html" class="hover:text-white/75">Contact</a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-4">
+        <img src="images/logo.jpeg" alt="Logo" class="h-12 w-12 object-contain rounded-full border border-primary" />
+        <span class="text-primary uppercase font-bold text-xl">Institut Théophile Obenga</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       CONTENU : À PROPOS & ÉQUIPE
+  ════════════════════════════════════════ -->
+  <main class="max-w-7xl mx-auto px-6 py-16">
+    <div class="border-editorial mb-12 pt-6">
+      <span class="uppercase font-bold tracking-widest text-sm text-primary/60 block mb-2">Institution</span>
+      <h1 class="text-4xl font-bold text-primary">Gouvernance & Équipe de l'Institut</h1>
+    </div>
+
+    <div class="grid lg:grid-cols-12 gap-12 items-start">
+      
+      <!-- Présentation générale -->
+      <div class="lg:col-span-4 space-y-6 sticky top-28 bg-grayLight p-6 border border-primary/10">
+        <h2 class="font-bold text-xl text-primary border-b border-primary/20 pb-2">Notre Mission</h2>
+        <p class="text-primary/90 text-sm leading-relaxed">
+          L'Institut Théophile Obenga des Relations Internationales est un think tank indépendant consacré à la recherche, à l'analyse stratégique et à la diplomatie en Afrique centrale.
+        </p>
+        <p class="text-primary/90 text-sm leading-relaxed">
+          Cliquez sur les profils de l'équipe pour découvrir leurs qualifications et expertises détaillées.
+        </p>
+      </div>
+
+      <!-- Listes des membres de l'équipe -->
+      <div class="lg:col-span-8 space-y-12">
+        
+        <!-- 1. Conseil d'administration -->
+        <div id="administration" class="border border-primary bg-white shadow-sm p-8">
+          <h3 class="font-bold text-2xl mb-6 text-primary border-b border-primary/10 pb-4">Conseil d’administration</h3>
+          <div class="space-y-6">
+            
+            <!-- Ignace Lokouako -->
+            <div class="flex items-center gap-5 cursor-pointer group" onclick="toggleBio('bio-ignace')">
+              <img src="images/ignace-lokouako.jpeg" alt="Ignace Lokouako" class="w-16 h-16 rounded-full object-cover border-2 border-primary/20 shrink-0" />
+              <div class="flex-1">
+                <h4 class="font-bold text-[18px] text-primary group-hover:underline">Ignace Lokouako 🔍</h4>
+                <p class="text-primary/80 text-[16px] mt-0.5">Président de l'Institut Théophile Obenga</p>
+                <div id="bio-ignace" class="hidden mt-3 p-3 bg-grayLight text-sm text-primary/90 border-l-2 border-primary">
+                  Président et fondateur, dirigeant les orientations stratégiques de l'institut et la recherche en relations internationales.
+                </div>
+              </div>
+            </div>
+
+            <!-- Andronique Okia -->
+            <div class="flex items-center gap-5 cursor-pointer group" onclick="toggleBio('bio-andronique')">
+              <img src="images/andronique-okia.jpeg" alt="Andronique Okia" class="w-16 h-16 rounded-full object-cover border-2 border-primary/20 shrink-0" />
+              <div class="flex-1">
+                <h4 class="font-bold text-[18px] text-primary group-hover:underline">Andronique Okia 🔍</h4>
+                <p class="text-primary/80 text-[16px] mt-0.5">Directeur Administratif et Financier (Direction Générale du Contrôle des Marchés Publics - DGCMP)</p>
+                <div id="bio-andronique" class="hidden mt-3 p-3 bg-grayLight text-sm text-primary/90 border-l-2 border-primary">
+                  Spécialiste de la gestion financière publique et des contrôles des marchés publics en République du Congo.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 2. Direction exécutive -->
+        <div id="direction" class="border border-primary bg-primary text-white shadow-sm p-8">
+          <h3 class="font-bold text-2xl mb-6 border-b border-white/20 pb-4">Direction exécutive</h3>
+          <div class="space-y-6">
+            
+            <div class="cursor-pointer group" onclick="toggleBio('bio-dir1')">
+              <h4 class="font-bold text-[18px] text-white group-hover:underline">1. Président et Directeur des Études stratégiques 🔍</h4>
+              <p class="text-white/90 text-[16px] mt-0.5">Direction de la recherche et de la prospective politique.</p>
+              <div id="bio-dir1" class="hidden mt-3 p-3 bg-white/10 text-sm text-white/90 border-l-2 border-white">
+                Supervise l'ensemble des notes d'orientation et rapports analytiques produits par l'institut.
+              </div>
+            </div>
+
+            <div class="flex items-center gap-5 cursor-pointer group" onclick="toggleBio('bio-smart')">
+              <img src="images/smart-dinga.jpeg" alt="Smart Dinga" class="w-16 h-16 rounded-full object-cover border-2 border-white/20 shrink-0" />
+              <div class="flex-1">
+                <h4 class="font-bold text-[18px] text-white group-hover:underline">Smart Dinga 🔍</h4>
+                <p class="text-white/90 text-[16px] mt-0.5">Vice-Président, Directeur du contenu numérique</p>
+                <p class="text-white/70 text-[14px]">Entrepreneur, traducteur et interprète</p>
+                <div id="bio-smart" class="hidden mt-3 p-3 bg-white/10 text-sm text-white/90 border-l-2 border-white">
+                  Expert en digitalisation des contenus stratégiques et en communication institutionnelle multilingue.
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-5 cursor-pointer group" onclick="toggleBio('bio-malraux')">
+              <img src="images/malraux-moranga.jpeg" alt="Malraux Moranga" class="w-16 h-16 rounded-full object-cover border-2 border-white/20 shrink-0" />
+              <div class="flex-1">
+                <h4 class="font-bold text-[18px] text-white group-hover:underline">Malraux Moranga 🔍</h4>
+                <p class="text-white/90 text-[16px] mt-0.5">Vice-Président, Directeur financier</p>
+                <p class="text-white/70 text-[14px]">Entrepreneur et économiste</p>
+                <div id="bio-malraux" class="hidden mt-3 p-3 bg-white/10 text-sm text-white/90 border-l-2 border-white">
+                  En charge de la viabilité financière, de la transparence et de l'audit des ressources institutionnelles.
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-5 cursor-pointer group" onclick="toggleBio('bio-jourdain')">
+              <img src="images/jourdain-nkossi.jpeg" alt="Jourdain Nkossi" class="w-16 h-16 rounded-full object-cover border-2 border-white/20 shrink-0" />
+              <div class="flex-1">
+                <h4 class="font-bold text-[18px] text-white group-hover:underline">Jourdain Nkossi 🔍</h4>
+                <p class="text-white/90 text-[16px] mt-0.5">Vice-Président, Directeur du développement</p>
+                <p class="text-white/70 text-[14px]">Juriste et spécialiste en Droit de la famille</p>
+                <div id="bio-jourdain" class="hidden mt-3 p-3 bg-white/10 text-sm text-white/90 border-l-2 border-white">
+                  Pilote les partenariats institutionnels et le développement organisationnel de l'ITO.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 3. Chercheurs associés (Fellow Researchers & Experts) -->
+        <div id="chercheurs" class="border border-primary/20 bg-white shadow-sm p-8">
+          <h3 class="font-bold text-2xl mb-6 text-primary border-b border-primary/10 pb-4">Chercheurs associés & Experts</h3>
+          <div class="space-y-6">
+            
+            <!-- Ahsan Ali -->
+            <div class="flex items-center gap-5 cursor-pointer group" onclick="toggleBio('bio-ahsan')">
+              <img src="images/ahsan-ali.jpeg" alt="Ahsan Ali" class="w-16 h-16 rounded-full object-cover border-2 border-primary/20 shrink-0" />
+              <div class="flex-1">
+                <h4 class="font-bold text-[18px] text-primary group-hover:underline">Ahsan Ali 🔍</h4>
+                <p class="text-primary/80 text-[16px]">Fellow Researcher</p>
+                <p class="text-primary/60 text-[14px]">BS in international relations, Political analyst. Specialist for North Africa and Middle East.</p>
+                <div id="bio-ahsan" class="hidden mt-3 p-3 bg-grayLight text-sm text-primary/90 border-l-2 border-primary">
+                  Analyse géopolitique axée sur la région MENA et les dynamiques diplomatiques nord-africaines.
+                </div>
+              </div>
+            </div>
+
+            <!-- Dr Castro Boueya -->
+            <div class="flex items-center gap-5 cursor-pointer group" onclick="toggleBio('bio-castro')">
+              <img src="images/dr-castro-boueya.jpeg" alt="Dr Castro Boueya" class="w-16 h-16 rounded-full object-cover border-2 border-primary/20 shrink-0" />
+              <div class="flex-1">
+                <h4 class="font-bold text-[18px] text-primary group-hover:underline">Dr Castro Boueya 🔍</h4>
+                <p class="text-primary/80 text-[16px]">Expert associé</p>
+                <div id="bio-castro" class="hidden mt-3 p-3 bg-grayLight text-sm text-primary/90 border-l-2 border-primary">
+                  Chercheur et contributeur aux perspectives d'experts en relations internationales.
+                </div>
+              </div>
+            </div>
+
+            <!-- Ibrahim H. Yunus -->
+            <div class="flex items-center gap-5 cursor-pointer group" onclick="toggleBio('bio-ibrahim')">
+              <div class="w-16 h-16 rounded-full bg-primary/10 border-2 border-primary/20 shrink-0 flex items-center justify-center font-bold text-primary">IHY</div>
+              <div class="flex-1">
+                <h4 class="font-bold text-[18px] text-primary group-hover:underline">Ibrahim H. Yunus 🔍</h4>
+                <p class="text-primary/80 text-[16px]">Expert / Contributeur</p>
+                <div id="bio-ibrahim" class="hidden mt-3 p-3 bg-grayLight text-sm text-primary/90 border-l-2 border-primary">
+                  Expert en études stratégiques et analyses régionales.
+                </div>
+              </div>
+            </div>
+
+            <!-- Membre ordinaire : Brunel Kalekina -->
+            <div class="flex items-center gap-5 cursor-pointer group pt-4 border-t border-primary/10" onclick="toggleBio('bio-brunel')">
+              <img src="images/brunel-kalekina.jpeg" alt="Brunel Kalekina" class="w-16 h-16 rounded-full object-cover border-2 border-primary/20 shrink-0" />
+              <div class="flex-1">
+                <h4 class="font-bold text-[18px] text-primary group-hover:underline">Brunel Kalekina 🔍</h4>
+                <p class="text-primary/80 text-[16px]">Membre Ordinaire (Profil Chinois)</p>
+                <p class="text-primary/60 text-[14px]">Professeur de langue chinoise et Interprète chinois-français. Expert en relations sino-congolaises.</p>
+                <div id="bio-brunel" class="hidden mt-3 p-3 bg-grayLight text-sm text-primary/90 border-l-2 border-primary">
+                  Spécialiste de la coopération bilatérale sino-congolaise, enseignant et traducteur spécialisé dans le partenariat stratégique Chine-Afrique.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Script pour afficher/masquer les profils au clic -->
+  <script>
+    function toggleBio(id) {
+      const bioElement = document.getElementById(id);
+      if (bioElement.classList.contains('hidden')) {
+        bioElement.classList.remove('hidden');
+      } else {
+        bioElement.classList.add('hidden');
+      }
+    }
+  </script>
+
+</body>
+</html>

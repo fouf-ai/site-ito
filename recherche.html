@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recherche & Publications - Institut Théophile Obenga</title>
+  <meta name="description" content="Découvrez nos notes d'orientation analytique, rapports de recherche, livres et perspectives d'experts." />
+  
+  <!-- ═══ TAILWIND CSS via CDN ═══ -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { 
+            primary: '#003399', 
+            white: '#FFFFFF',
+            grayLight: '#F3F4F6'
+          },
+          fontFamily: { 
+            sans: ['"Times New Roman"', 'Times', 'serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-white text-primary font-sans text-[17px]">
+
+  <!-- ═══════════════════════════════════════
+       EN-TÊTE SIMPLIFIÉ
+  ════════════════════════════════════════ -->
+  <header class="bg-white border-b-4 border-primary sticky top-0 z-50 shadow-sm">
+    <div class="bg-primary text-white text-[15px] py-1.5 px-6 flex justify-between items-center">
+      <a href="index.html" class="hover:underline">← Retour à l'accueil</a>
+      <div class="flex items-center gap-6 font-semibold uppercase tracking-widest text-sm">
+        <a href="apropos.html" class="hover:text-white/75">À propos</a>
+        <a href="adhesion.html" class="hover:text-white/75">Adhérer</a>
+        <a href="contact.html" class="hover:text-white/75">Contact</a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-4">
+        <img src="images/logo.jpeg" alt="Logo" class="h-12 w-12 object-contain rounded-full border border-primary" />
+        <span class="text-primary uppercase font-bold text-xl">Institut Théophile Obenga</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       SECTION RECHERCHE & PUBLICATIONS
+  ════════════════════════════════════════ -->
+  <main class="py-16 bg-primary text-white min-h-[80vh]">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="border-t-4 border-white mb-12 pt-6">
+        <span class="uppercase tracking-widest text-sm font-bold opacity-80 block mb-2">Travaux & Analyses</span>
+        <h1 class="text-3xl md:text-5xl font-bold">Recherche & Publications</h1>
+      </div>
+
+      <p class="max-w-3xl text-[19px] opacity-90 mb-16 leading-relaxed">
+        Nos activités de recherche sont menées en toute indépendance intellectuelle. Toutes nos publications respectent la rigueur scientifique, la vérification des faits et la transparence méthodologique.
+      </p>
+
+      <!-- Grille des formats de recherche (Traduite & enrichie) -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-0 border-l border-t border-white/20">
+        
+        <div class="border-r border-b border-white/20 p-8 hover:bg-white hover:text-primary transition-colors group cursor-pointer">
+          <span class="text-sm uppercase tracking-widest font-bold opacity-60 group-hover:text-primary/60 mb-4 block">Format 01</span>
+          <h3 class="font-bold text-2xl mb-4 group-hover:text-primary">Notes d’orientation analytique</h3>
+          <p class="opacity-80 group-hover:text-primary/80 leading-relaxed text-sm">
+            Production de notes d'orientation politique et de notes de politique publique destinées aux décideurs gouvernementaux et institutionnels.
+          </p>
+        </div>
+
+        <div class="border-r border-b border-white/20 p-8 hover:bg-white hover:text-primary transition-colors group cursor-pointer">
+          <span class="text-sm uppercase tracking-widest font-bold opacity-60 group-hover:text-primary/60 mb-4 block">Format 02</span>
+          <h3 class="font-bold text-2xl mb-4 group-hover:text-primary">Perspectives d’experts</h3>
+          <p class="opacity-80 group-hover:text-primary/80 leading-relaxed text-sm">
+            Analyses approfondies et éclairages par nos chercheurs associés (Dr Castro Boueya, Ibrahim H. Yunus, etc.) sur les enjeux géopolitiques actuels.
+          </p>
+        </div>
+
+        <div class="border-r border-b border-white/20 p-8 hover:bg-white hover:text-primary transition-colors group cursor-pointer">
+          <span class="text-sm uppercase tracking-widest font-bold opacity-60 group-hover:text-primary/60 mb-4 block">Format 03</span>
+          <h3 class="font-bold text-2xl mb-4 group-hover:text-primary">Rapports de recherche</h3>
+          <p class="opacity-80 group-hover:text-primary/80 leading-relaxed text-sm">
+            Publication régulière de rapports de recherche de format mensuel et annuel sur les enjeux stratégiques et économiques majeurs.
+          </p>
+        </div>
+
+        <div class="border-r border-b border-white/20 p-8 hover:bg-white hover:text-primary transition-colors group cursor-pointer">
+          <span class="text-sm uppercase tracking-widest font-bold opacity-60 group-hover:text-primary/60 mb-4 block">Format 04</span>
+          <h3 class="font-bold text-2xl mb-4 group-hover:text-primary">Livres</h3>
+          <p class="opacity-80 group-hover:text-primary/80 leading-relaxed text-sm">
+            Ouvrages collectifs et monographies édités par l'institut portant sur l'histoire, la stratégie et le développement de l'Afrique.
+          </p>
+        </div>
+
+        <div class="border-r border-b border-white/20 p-8 hover:bg-white hover:text-primary transition-colors group cursor-pointer">
+          <span class="text-sm uppercase tracking-widest font-bold opacity-60 group-hover:text-primary/60 mb-4 block">Format 05</span>
+          <h3 class="font-bold text-2xl mb-4 group-hover:text-primary">Podcasts</h3>
+          <p class="opacity-80 group-hover:text-primary/80 leading-relaxed text-sm">
+            Entretiens audio et discussions thématiques avec des diplomates, économistes et experts internationaux.
+          </p>
+        </div>
+
+        <div class="border-r border-b border-white/20 p-8 hover:bg-white hover:text-primary transition-colors group cursor-pointer">
+          <span class="text-sm uppercase tracking-widest font-bold opacity-60 group-hover:text-primary/60 mb-4 block">Format 06</span>
+          <h3 class="font-bold text-2xl mb-4 group-hover:text-primary">Discussions sur les perspectives globales</h3>
+          <p class="opacity-80 group-hover:text-primary/80 leading-relaxed text-sm">
+            Cycle de conférences sur les perspectives mondiales et tables rondes stratégiques ouvertes aux membres de l'institut.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="bg-black/20 text-white py-6 text-center text-sm uppercase tracking-wider font-bold">
+    &copy; 2026 Institut Théophile Obenga. Tous droits réservés.
+  </footer>
+
+</body>
+</html>

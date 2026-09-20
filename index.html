@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══ SEO PRINCIPAL ═══ -->
+  <title>Institut Théophile Obenga des Relations Internationales</title>
+  <meta name="description" content="Organisation indépendante, non partisane et à but non lucratif dédiée aux relations internationales et au développement économique." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://institutobenga.org/" />
+  <meta name="theme-color" content="#003399" />
+
+  <!-- ═══ FAVICON ═══ -->
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg" />
+  <link rel="apple-touch-icon" href="images/logo.jpeg" />
+
+  <!-- ═══ TAILWIND CSS via CDN ═══ -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { 
+            primary: '#003399', 
+            white: '#FFFFFF',
+            grayLight: '#F3F4F6'
+          },
+          fontFamily: { 
+            sans: ['"Times New Roman"', 'Times', 'serif'],
+            serif: ['"Times New Roman"', 'Times', 'serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- ═══ FEUILLE DE STYLE EXTERNE ═══ -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-white text-primary font-sans text-[17px]">
+
+  <!-- ═══════════════════════════════════════
+       EN-TÊTE
+  ════════════════════════════════════════ -->
+  <header id="top" class="bg-white border-b-4 border-primary sticky top-0 z-50 shadow-sm">
+    
+    <!-- 1. Barre utilitaire supérieure (Top Bar avec e-mails institutionnels) -->
+    <div class="bg-primary text-white text-[15px] py-1.5 px-6 flex flex-wrap justify-between items-center gap-4">
+      <div class="flex items-center gap-4 text-xs sm:text-sm">
+        <a href="mailto:contact@institutibenga.org" class="hover:underline flex items-center gap-1">
+          <span>✉ contact@institutibenga.org</span>
+        </a>
+        <span class="hidden md:inline">|</span>
+        <a href="mailto:Ignace@institutobenga.org" class="hover:underline hidden md:flex items-center gap-1">
+          <span>✉ Ignace@institutobenga.org</span>
+        </a>
+      </div>
+      
+      <div class="flex items-center gap-6 font-semibold uppercase tracking-widest text-sm">
+        <a href="apropos.html" class="hover:text-white/75">À propos</a>
+        <a href="contact.html" class="hover:text-white/75">Contact</a>
+        <a href="adhesion.html" class="text-white hover:text-white/75 underline underline-offset-2">Adhérer</a>
+        <a href="https://www.facebook.com/profile.php?id=61562809538558" target="_blank" rel="noopener noreferrer" class="hover:text-white/75" aria-label="Notre page Facebook">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    
+    <!-- 2. Zone Logo & Titre -->
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between bg-white border-b border-primary/10">
+      <a href="index.html" class="flex items-center gap-4">
+        <img src="images/logo.jpeg" alt="Logo Institut Théophile Obenga" class="h-16 w-16 object-contain rounded-full border border-primary" />
+        <div class="flex flex-col text-primary uppercase font-normal text-[22px] md:text-[26px] leading-tight">
+          <span>Institut Théophile Obenga</span>
+          <span>Des Relations Internationales</span>
+        </div>
+      </a>
+
+      <button type="button" id="menu-btn" class="lg:hidden text-primary focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- 3. Navigation Principale (Desktop - Corrigée et traduite) -->
+    <nav class="hidden lg:flex max-w-7xl mx-auto px-6 items-center justify-between font-bold uppercase text-[14px] tracking-widest relative">
+      
+      <!-- Régions -->
+      <div class="dropdown group py-4">
+        <button class="hover:text-primary/75 flex items-center gap-1 focus:outline-none">
+          Régions
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div class="dropdown-content absolute left-0 top-full w-64 bg-white border-t-2 border-primary shadow-xl z-50 pb-2">
+          <ul class="text-primary capitalize tracking-normal text-[16px] font-medium">
+            <li><a href="#" class="block px-6 py-2.5 hover:bg-grayLight">Afrique Centrale</a></li>
+            <li><a href="#" class="block px-6 py-2.5 hover:bg-grayLight">Afrique de l'Ouest</a></li>
+            <li><a href="#" class="block px-6 py-2.5 hover:bg-grayLight">Moyen-Orient & Nord</a></li>
+            <li><a href="#" class="block px-6 py-2.5 hover:bg-grayLight">Amériques</a></li>
+            <li><a href="#" class="block px-6 py-2.5 hover:bg-grayLight">Asie & Pacifique</a></li>
+            <li><a href="#" class="block px-6 py-2.5 hover:bg-grayLight">Europe</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Thématiques (Doublon de sécurité corrigé) -->
+      <div class="dropdown group py-4">
+        <button class="hover:text-primary/75 flex items-center gap-1 focus:outline-none">
+          Thématiques
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div class="dropdown-content absolute left-32 top-full w-72 bg-white border-t-2 border-primary shadow-xl z-50 pb-2">
+          <ul class="text-primary capitalize tracking-normal text-[16px] font-medium">
+            <li><a href="#" class="block px-6 py-2.5 hover:bg-grayLight">Diplomatie</a></li>
+            <li><a href="#" class="block px-6 py-2.5 hover:bg-grayLight">Géopolitique et stratégie</a></li>
+            <li><a href="#" class="block px-6 py-2.5 hover:bg-grayLight">Défense et sécurité</a></li>
+            <li><a href="#" class="block px-6 py-2.5 hover:bg-grayLight">Économie et développement</a></li>
+            <li><a href="#" class="block px-6 py-2.5 hover:bg-grayLight">Gouvernance Globale</a></li>
+            <li><a href="#" class="block px-6 py-2.5 hover:bg-grayLight">Énergie et environnement</a></li>
+            <li><a href="#" class="block px-6 py-2.5 hover:bg-grayLight">Droits de l'homme</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Recherche (Traduite en français & perspectives d'experts ajoutées) -->
+      <div class="dropdown group py-4">
+        <button class="hover:text-primary/75 flex items-center gap-1 focus:outline-none">
+          Recherche
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div class="dropdown-content absolute left-64 top-full w-80 bg-white border-t-2 border-primary shadow-xl z-50 pb-2">
+          <ul class="text-primary capitalize tracking-normal text-[16px] font-medium">
+            <li><a href="recherche.html" class="block px-6 py-2.5 hover:bg-grayLight">Notes d’orientation analytique</a></li>
+            <li><a href="recherche.html" class="block px-6 py-2.5 hover:bg-grayLight">Perspectives d’experts</a></li>
+            <li><a href="recherche.html" class="block px-6 py-2.5 hover:bg-grayLight">Rapports de recherche</a></li>
+            <li><a href="recherche.html" class="block px-6 py-2.5 hover:bg-grayLight">Livres</a></li>
+            <li><a href="recherche.html" class="block px-6 py-2.5 hover:bg-grayLight">Podcasts</a></li>
+            <li><a href="recherche.html" class="block px-6 py-2.5 hover:bg-grayLight">Cycle de conférences sur les perspectives mondiales</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Experts (Termes corrigés) -->
+      <div class="dropdown group py-4">
+        <button class="hover:text-primary/75 flex items-center gap-1 focus:outline-none">
+          Experts
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div class="dropdown-content absolute right-64 top-full w-64 bg-white border-t-2 border-primary shadow-xl z-50 pb-2">
+          <ul class="text-primary capitalize tracking-normal text-[16px] font-medium">
+            <li><a href="apropos.html#administration" class="block px-6 py-2.5 hover:bg-grayLight">Conseil d’administration</a></li>
+            <li><a href="apropos.html#direction" class="block px-6 py-2.5 hover:bg-grayLight">Direction exécutive</a></li>
+            <li><a href="apropos.html#chercheurs" class="block px-6 py-2.5 hover:bg-grayLight">Chercheurs associés</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Événements -->
+      <div class="dropdown group py-4">
+        <button class="hover:text-primary/75 flex items-center gap-1 focus:outline-none">
+          Événements
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div class="dropdown-content absolute right-32 top-full w-64 bg-white border-t-2 border-primary shadow-xl z-50 pb-2">
+          <ul class="text-primary capitalize tracking-normal text-[16px] font-medium">
+            <li><a href="#" class="block px-6 py-2.5 hover:bg-grayLight">À Venir</a></li>
+            <li><a href="#" class="block px-6 py-2.5 hover:bg-grayLight">Conférences Majeures</a></li>
+            <li><a href="#" class="block px-6 py-2.5 hover:bg-grayLight">Archives Vidéos</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- L'Avenir de la Stratégie -->
+      <div class="dropdown group py-4">
+        <button class="hover:text-primary/75 flex items-center gap-1 focus:outline-none text-primary bg-primary/5 px-3 rounded-sm">
+          L'Avenir de la Stratégie
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div class="dropdown-content absolute right-0 top-full w-72 bg-white border-t-2 border-primary shadow-xl z-50 pb-2">
+          <ul class="text-primary capitalize tracking-normal text-[16px] font-medium">
+            <li><a href="#" class="block px-6 py-2.5 hover:bg-grayLight">Prospective Stratégique</a></li>
+            <li><a href="#" class="block px-6 py-2.5 hover:bg-grayLight">Diplomatie Africaine 2050</a></li>
+            <li><a href="#" class="block px-6 py-2.5 hover:bg-grayLight">Nouvelles Alliances Mondiales</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 4. Menu Mobile Déroulant -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-primary/20 max-h-[80vh] overflow-y-auto">
+      <nav class="flex flex-col font-bold uppercase tracking-wide text-sm divide-y divide-primary/10">
+        <div class="px-6 py-4 bg-primary/5">
+          <a href="apropos.html" class="block text-primary py-2">À propos</a>
+          <a href="contact.html" class="block text-primary py-2">Contact</a>
+          <a href="adhesion.html" class="block text-primary py-2">Adhérer</a>
+        </div>
+        <a href="recherche.html" class="px-6 py-4 text-primary block">Recherche & Publications</a>
+        <a href="apropos.html" class="px-6 py-4 text-primary block">Experts & Gouvernance</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       SECTION HÉRO (À LA UNE)
+  ════════════════════════════════════════ -->
+  <section class="max-w-7xl mx-auto px-6 py-12 md:py-20">
+    <div class="grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-8 flex flex-col gap-6">
+        <div class="border-editorial-thin pt-2 w-16 mb-2"></div>
+        <span class="text-primary font-bold uppercase tracking-[0.2em] text-sm">
+          Analyse & Diplomatie
+        </span>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-primary">
+          L'Avenir de la stratégie et du développement économique.
+        </h1>
+        <p class="text-primary/80 text-xl font-light max-w-3xl leading-relaxed mt-2">
+          Dans la poursuite de sa mission visant à éclairer l'engagement des pays d'Afrique centrale avec le reste du monde et à exercer une influence sur les enjeux diplomatiques, économiques et du développement pour les pays africains, l'Institut Théophile Obenga s'appuie sur les contributions philanthropiques de particuliers, d'entreprises et de fondations.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 mt-8">
+          <a href="recherche.html" class="bg-primary text-white text-center px-8 py-4 font-bold uppercase tracking-widest text-sm hover:bg-primary/90">
+            Lire nos publications
+          </a>
+          <a href="adhesion.html" class="bg-white text-primary text-center px-8 py-4 font-bold uppercase tracking-widest text-sm border border-primary hover:bg-primary/5">
+            Devenir Membre
+          </a>
+        </div>
+      </div>
+      
+      <div class="lg:col-span-4 flex justify-center lg:justify-end">
+        <div class="w-full max-w-sm aspect-square bg-white border-2 border-primary/10 flex items-center justify-center p-6 shadow-2xl">
+           <img src="images/logo.jpeg" alt="Logo" class="w-full h-full object-contain mix-blend-multiply" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer class="bg-primary text-white mt-20">
+    <div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="space-y-6">
+        <div class="flex items-center gap-4">
+          <img src="images/logo.jpeg" alt="Logo" class="h-12 w-12 object-contain rounded-full bg-white p-1" />
+          <h2 class="font-bold text-2xl uppercase tracking-widest">ITO</h2>
+        </div>
+        <p class="text-white/75 leading-relaxed text-sm">
+          Contact : <a href="mailto:contact@institutibenga.org" class="underline">contact@institutibenga.org</a> / <a href="mailto:Ignace@institutobenga.org" class="underline">Ignace@institutobenga.org</a>
+        </p>
+      </div>
+      <div class="space-y-6">
+        <h4 class="font-bold uppercase tracking-widest text-sm border-b border-white/20 pb-3">Navigation</h4>
+        <ul class="space-y-3 text-white/80 font-medium">
+          <li><a href="index.html" class="hover:text-white">Accueil</a></li>
+          <li><a href="apropos.html" class="hover:text-white">À propos & Équipe</a></li>
+          <li><a href="recherche.html" class="hover:text-white">Recherche & Perspectives</a></li>
+          <li><a href="adhesion.html" class="hover:text-white">Adhésion</a></li>
+        </ul>
+      </div>
+      <div class="space-y-6">
+        <h4 class="font-bold uppercase tracking-widest text-sm border-b border-white/20 pb-3">Organisation</h4>
+        <p class="text-white/75 text-sm leading-relaxed">
+          Organisation indépendante, non partisane et à but non lucratif dédiée aux relations internationales et au développement économique en Afrique centrale.
+        </p>
+      </div>
+    </div>
+    <div class="border-t border-white/10 bg-black/10 py-6 text-center text-sm text-white/50 uppercase tracking-wider font-bold">
+      &copy; 2026 Institut Théophile Obenga. Tous droits réservés. Brazzaville, Congo.
+    </div>
+  </footer>
+
+</body>
+</html>

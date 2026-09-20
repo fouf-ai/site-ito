@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adhésion & Philanthropie - Institut Théophile Obenga</title>
+  <meta name="description" content="Adhérez à l'Institut Théophile Obenga et soutenez nos recherches en relations internationales." />
+  
+  <!-- ═══ TAILWIND CSS via CDN ═══ -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { 
+            primary: '#003399', 
+            white: '#FFFFFF',
+            grayLight: '#F3F4F6'
+          },
+          fontFamily: { 
+            sans: ['"Times New Roman"', 'Times', 'serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-white text-primary font-sans text-[17px]">
+
+  <!-- ═══════════════════════════════════════
+       EN-TÊTE SIMPLIFIÉ
+  ════════════════════════════════════════ -->
+  <header class="bg-white border-b-4 border-primary sticky top-0 z-50 shadow-sm">
+    <div class="bg-primary text-white text-[15px] py-1.5 px-6 flex justify-between items-center">
+      <a href="index.html" class="hover:underline">← Retour à l'accueil</a>
+      <div class="flex items-center gap-6 font-semibold uppercase tracking-widest text-sm">
+        <a href="apropos.html" class="hover:text-white/75">À propos</a>
+        <a href="recherche.html" class="hover:text-white/75">Recherche</a>
+        <a href="contact.html" class="hover:text-white/75">Contact</a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-4">
+        <img src="images/logo.jpeg" alt="Logo" class="h-12 w-12 object-contain rounded-full border border-primary" />
+        <span class="text-primary uppercase font-bold text-xl">Institut Théophile Obenga</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       SECTION PHILANTHROPIE & ADHÉSION
+  ════════════════════════════════════════ -->
+  <main class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <!-- Texte officiel sur la philanthropie -->
+      <div class="max-w-4xl mx-auto bg-grayLight border-l-4 border-primary p-8 mb-16">
+        <h2 class="font-bold text-2xl text-primary mb-4">Engagement & Philanthropie</h2>
+        <p class="text-primary/90 leading-relaxed text-[17px]">
+          Dans la poursuite de sa mission visant à éclairer l'engagement des pays d'Afrique centrale avec le reste du monde et à exercer une influence sur les enjeux diplomatiques, économiques et du développement pour les pays africains, l'Institut Théophile Obenga s'appuie sur les contributions philanthropiques de particuliers, d'entreprises et de fondations.
+        </p>
+        <p class="text-primary/90 leading-relaxed text-[17px] mt-4">
+          En tant qu'organisation à but non lucratif, l'Institut accueille favorablement les dons non affectés destinés à soutenir son Fonds annuel, quel qu'en soit le niveau, et exprime sa profonde gratitude à l'égard de tous ceux qui soutiennent ses actions.
+        </p>
+      </div>
+
+      <div class="border-editorial mb-12 pt-6 text-center">
+        <h1 class="text-3xl md:text-4xl font-bold text-primary mb-4">Adhérer à l'Institut</h1>
+        <p class="text-primary/80 text-[19px] max-w-2xl mx-auto">
+          Vos cotisations soutiennent exclusivement notre fonctionnement administratif, nos recherches et l'organisation d'événements scientifiques.
+        </p>
+      </div>
+
+      <!-- Grille des tarifs et types de membres -->
+      <div class="grid md:grid-cols-3 gap-8 mt-12">
+        
+        <div class="bg-grayLight border border-primary/20 p-8 flex flex-col">
+          <h3 class="font-bold uppercase tracking-widest text-sm text-primary mb-4">Membre Ordinaire</h3>
+          <div class="text-4xl font-bold text-primary mb-1">10 000 <span class="text-lg font-normal uppercase tracking-wide">FCFA / an</span></div>
+          <p class="text-sm text-primary/60 mb-8 border-b border-primary/10 pb-4 font-bold">Cotisation annuelle</p>
+          <ul class="flex flex-col gap-4 text-primary/90 flex-1 mb-8">
+            <li class="flex gap-3"><span class="text-primary font-bold">✓</span> Vote en Assemblée générale</li>
+            <li class="flex gap-3"><span class="text-primary font-bold">✓</span> Réception des publications et rapports</li>
+            <li class="flex gap-3"><span class="text-primary font-bold">✓</span> Accès aux événements de l'Institut</li>
+          </ul>
+          <a href="contact.html" class="w-full text-center border-2 border-primary text-primary font-bold uppercase tracking-wide text-sm py-4 hover:bg-primary hover:text-white transition-colors">Rejoindre</a>
+        </div>
+
+        <div class="bg-primary border border-primary p-8 flex flex-col text-white shadow-2xl transform md:-translate-y-4">
+          <h3 class="font-bold uppercase tracking-widest text-sm mb-4">Membre du Comité Exécutif</h3>
+          <div class="text-4xl font-bold mb-1">15 000 <span class="text-lg font-normal uppercase tracking-wide">FCFA</span></div>
+          <p class="text-sm text-white/60 mb-8 border-b border-white/20 pb-4 font-bold">Cotisation statutaire des dirigeants</p>
+          <ul class="flex flex-col gap-4 text-white/90 flex-1 mb-8">
+            <li class="flex gap-3"><span class="font-bold">✓</span> Gestion opérationnelle de l'Institut</li>
+            <li class="flex gap-3"><span class="font-bold">✓</span> Mise en œuvre des décisions stratégiques</li>
+            <li class="flex gap-3"><span class="font-bold">✓</span> Présence aux réunions obligatoires</li>
+          </ul>
+          <a href="contact.html" class="w-full text-center bg-white text-primary font-bold uppercase tracking-wide text-sm py-4 hover:bg-gray-100 transition-colors">Nous contacter</a>
+        </div>
+
+        <div class="bg-grayLight border border-primary/20 p-8 flex flex-col">
+          <h3 class="font-bold uppercase tracking-widest text-sm text-primary mb-4">Membre Honoraire</h3>
+          <div class="text-4xl font-bold text-primary mb-1">10 000 <span class="text-lg font-normal uppercase tracking-wide">FCFA</span></div>
+          <p class="text-sm text-primary/60 mb-8 border-b border-primary/10 pb-4 font-bold">Soutien institutionnel</p>
+          <ul class="flex flex-col gap-4 text-primary/90 flex-1 mb-8">
+            <li class="flex gap-3"><span class="text-primary font-bold">✓</span> Titre honorifique de l'Institut</li>
+            <li class="flex gap-3"><span class="text-primary font-bold">✓</span> Accès privilégié aux travaux de recherche</li>
+            <li class="flex gap-3"><span class="text-primary font-bold">✓</span> Participation aux assemblées</li>
+          </ul>
+          <a href="contact.html" class="w-full text-center border-2 border-primary text-primary font-bold uppercase tracking-wide text-sm py-4 hover:bg-primary hover:text-white transition-colors">Rejoindre</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="bg-primary text-white py-6 text-center text-sm uppercase tracking-wider font-bold">
+    &copy; 2026 Institut Théophile Obenga. Tous droits réservés.
+  </footer>
+
+</body>
+</html>
