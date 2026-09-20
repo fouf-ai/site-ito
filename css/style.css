@@ -1,37 +1,27 @@
-/* ==========================================================================
-   INSTITUT THÉOPHILE OBENGA - STYLES GLOBAUX (CSS)
-   ========================================================================== */
-
-html {
-  scroll-behavior: smooth;
-}
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap');
 
 body {
+  font-family: "Times New Roman", Times, serif;
   background-color: #FFFFFF;
   color: #003399;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 17px;
 }
 
-/* Lignes de structure éditoriale */
+/* Style éditorial et bordures */
 .border-editorial {
-  border-top: 3px solid #003399;
+  border-top: 2px solid #003399;
+  border-bottom: 2px solid #003399;
 }
 
-.border-editorial-thin {
-  border-top: 1px solid #003399;
-}
-
-/* Menus déroulants (Dropdowns desktop) */
-.dropdown-content {
+/* Personnalisation des menus déroulants et liens */
+.dropdown-menu {
   display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  border: 1px solid #003399;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  z-index: 10;
 }
 
-.dropdown:hover .dropdown-content {
+.group:hover .dropdown-menu {
   display: block;
-}
-
-/* Transitions douces */
-a, button {
-  transition: all 0.2s ease-in-out;
 }
