@@ -6,7 +6,6 @@
   <title>À propos & Gouvernance - Institut Théophile Obenga</title>
   <meta name="description" content="Découvrez la gouvernance, la direction exécutive et les chercheurs associés de l'Institut Théophile Obenga." />
   
-  <!-- ═══ TAILWIND CSS via CDN ═══ -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -28,9 +27,6 @@
 </head>
 <body class="bg-white text-primary font-sans text-[17px]">
 
-  <!-- ═══════════════════════════════════════
-       EN-TÊTE SIMPLIFIÉ
-  ════════════════════════════════════════ -->
   <header class="bg-white border-b-4 border-primary sticky top-0 z-50 shadow-sm">
     <div class="bg-primary text-white text-[15px] py-1.5 px-6 flex justify-between items-center">
       <a href="index.html" class="hover:underline">← Retour à l'accueil</a>
@@ -48,9 +44,6 @@
     </div>
   </header>
 
-  <!-- ═══════════════════════════════════════
-       CONTENU : À PROPOS & ÉQUIPE
-  ════════════════════════════════════════ -->
   <main class="max-w-7xl mx-auto px-6 py-16">
     <div class="border-editorial mb-12 pt-6">
       <span class="uppercase font-bold tracking-widest text-sm text-primary/60 block mb-2">institution</span>
@@ -59,7 +52,6 @@
 
     <div class="grid lg:grid-cols-12 gap-12 items-start">
       
-      <!-- Présentation générale -->
       <div class="lg:col-span-4 space-y-6 sticky top-28 bg-grayLight p-6 border border-primary/10">
         <h2 class="font-bold text-xl text-primary border-b border-primary/20 pb-2">Notre Mission</h2>
         <p class="text-primary/90 text-sm leading-relaxed">
@@ -70,15 +62,13 @@
         </p>
       </div>
 
-      <!-- Listes des membres de l'équipe -->
       <div class="lg:col-span-8 space-y-12">
         
-        <!-- 1. Conseil d'administration -->
+        <!-- Conseil d'administration -->
         <div id="administration" class="border border-primary bg-white shadow-sm p-8">
           <h3 class="font-bold text-2xl mb-6 text-primary border-b border-primary/10 pb-4">Conseil d’administration</h3>
           <div class="space-y-6">
             
-            <!-- Ignace Lokouako -->
             <div class="flex items-center gap-5 cursor-pointer group" onclick="toggleBio('bio-ignace')">
               <img src="images/ignace-lokouako.jpeg" alt="Ignace Lokouako" class="w-16 h-16 rounded-full object-cover border-2 border-primary/20 shrink-0" />
               <div class="flex-1">
@@ -90,14 +80,35 @@
               </div>
             </div>
 
-            <!-- Andronique Okia -->
             <div class="flex items-center gap-5 cursor-pointer group" onclick="toggleBio('bio-andronique')">
               <img src="images/andronique-okia.jpeg" alt="Andronique Okia" class="w-16 h-16 rounded-full object-cover border-2 border-primary/20 shrink-0" />
               <div class="flex-1">
                 <h4 class="font-bold text-[18px] text-primary group-hover:underline">Andronique Okia 🔍</h4>
-                <p class="text-primary/80 text-[16px] mt-0.5">Directeur Administratif et Financier (Direction Générale du Contrôle des Marchés Publics - DGCMP)</p>
+                <p class="text-primary/80 text-[16px] mt-0.5">Directeur administratif et financier, Direction générale du contrôle des marchés publics.</p>
                 <div id="bio-andronique" class="hidden mt-3 p-3 bg-grayLight text-sm text-primary/90 border-l-2 border-primary">
                   Spécialiste de la gestion financière publique et des contrôles des marchés publics en République du Congo.
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-5 cursor-pointer group" onclick="toggleBio('bio-garrec')">
+              <img src="images/garrec-milandou.jpeg" alt="Garrec Milandou" class="w-16 h-16 rounded-full object-cover border-2 border-primary/20 shrink-0" />
+              <div class="flex-1">
+                <h4 class="font-bold text-[18px] text-primary group-hover:underline">Garrec Milandou 🔍</h4>
+                <p class="text-primary/80 text-[16px] mt-0.5">Directeur, Union Africaine et intégration régionale, Ministère des affaires étrangères (République du Congo)</p>
+                <div id="bio-garrec" class="hidden mt-3 p-3 bg-grayLight text-sm text-primary/90 border-l-2 border-primary">
+                  Expert en politiques de l'Union africaine, diplomatie multilatérale et intégration régionale en Afrique.
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-5 cursor-pointer group" onclick="toggleBio('bio-castro')">
+              <img src="images/castro-boueya.jpeg" alt="Dr Castro Boueya" class="w-16 h-16 rounded-full object-cover border-2 border-primary/20 shrink-0" />
+              <div class="flex-1">
+                <h4 class="font-bold text-[18px] text-primary group-hover:underline">Dr Castro Boueya 🔍</h4>
+                <p class="text-primary/80 text-[16px] mt-0.5">Docteur en Droit international humanitaire.</p>
+                <div id="bio-castro" class="hidden mt-3 p-3 bg-grayLight text-sm text-primary/90 border-l-2 border-primary">
+                  Chercheur et expert en droit international humanitaire et relations stratégiques.
                 </div>
               </div>
             </div>
@@ -105,16 +116,19 @@
           </div>
         </div>
 
-        <!-- 2. Direction exécutive -->
+        <!-- Direction exécutive -->
         <div id="direction" class="border border-primary bg-primary text-white shadow-sm p-8">
           <h3 class="font-bold text-2xl mb-6 border-b border-white/20 pb-4">Direction exécutive</h3>
           <div class="space-y-6">
             
-            <div class="cursor-pointer group" onclick="toggleBio('bio-dir1')">
-              <h4 class="font-bold text-[18px] text-white group-hover:underline">1. Président et Directeur des Études stratégiques 🔍</h4>
-              <p class="text-white/90 text-[16px] mt-0.5">Direction de la recherche et de la prospective politique.</p>
-              <div id="bio-dir1" class="hidden mt-3 p-3 bg-white/10 text-sm text-white/90 border-l-2 border-white">
-                Supervise l'ensemble des notes d'orientation et rapports analytiques produits par l'institut.
+            <div class="flex items-center gap-5 cursor-pointer group" onclick="toggleBio('bio-dir-ignace')">
+              <img src="images/ignace-lokouako.jpeg" alt="Ignace Lokouako" class="w-16 h-16 rounded-full object-cover border-2 border-white/20 shrink-0" />
+              <div class="flex-1">
+                <h4 class="font-bold text-[18px] text-white group-hover:underline">Directeur d’études : Ignace Lokouako 🔍</h4>
+                <p class="text-white/90 text-[16px] mt-0.5">Direction de la recherche et de la prospective politique.</p>
+                <div id="bio-dir-ignace" class="hidden mt-3 p-3 bg-white/10 text-sm text-white/90 border-l-2 border-white">
+                  Supervise l'ensemble des notes d'orientation et rapports analytiques produits par l'institut.
+                </div>
               </div>
             </div>
 
@@ -157,12 +171,11 @@
           </div>
         </div>
 
-        <!-- 3. Chercheurs associés (Fellow Researchers & Experts) -->
+        <!-- Chercheurs associés -->
         <div id="chercheurs" class="border border-primary/20 bg-white shadow-sm p-8">
-          <h3 class="font-bold text-2xl mb-6 text-primary border-b border-primary/10 pb-4">Chercheurs associés & Experts</h3>
+          <h3 class="font-bold text-2xl mb-6 text-primary border-b border-primary/10 pb-4">Chercheurs associés</h3>
           <div class="space-y-6">
             
-            <!-- Ahsan Ali -->
             <div class="flex items-center gap-5 cursor-pointer group" onclick="toggleBio('bio-ahsan')">
               <img src="images/ahsan-ali.jpeg" alt="Ahsan Ali" class="w-16 h-16 rounded-full object-cover border-2 border-primary/20 shrink-0" />
               <div class="flex-1">
@@ -175,22 +188,19 @@
               </div>
             </div>
 
-            <!-- Joce Passy -->
             <div class="flex items-center gap-5 cursor-pointer group" onclick="toggleBio('bio-joce')">
-              <img src="images/joce-passy.jpeg" alt="Joce Passy" class="w-16 h-16 rounded-full object-cover border-2 border-primary/20 shrink-0" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'64\' height=\'64\'><circle cx=\'32\' cy=\'32\' r=\'32\' fill=\'%23003399\'/><text x=\'50%\' y=\'54%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'white\' font-size=\'18\' font-family=\'Arial\'>JP</text></svg>';" />
+              <img src="images/joce-passy.jpeg" alt="Joce Passy" class="w-16 h-16 rounded-full object-cover border-2 border-primary/20 shrink-0" />
               <div class="flex-1">
                 <h4 class="font-bold text-[18px] text-primary group-hover:underline">Joce Passy 🔍</h4>
-                <p class="text-primary/80 text-[16px]">Spécialiste en relation sino-congolaise, professeur de langue chinoise et interprète français-mandarin</p>
+                <p class="text-primary/80 text-[16px]">Spécialiste en relation Sino-Congolaise, Professeur de langue chinoise et interprète français-mandarin.</p>
                 <div id="bio-joce" class="hidden mt-3 p-3 bg-grayLight text-sm text-primary/90 border-l-2 border-primary">
                   Expert en coopération bilatérale, enseignement linguistique et échanges culturels et stratégiques sino-congolais.
                 </div>
               </div>
             </div>
 
-            <!-- Ibrahim H. Yunus -->
             <div class="flex items-center gap-5 cursor-pointer group" onclick="toggleBio('bio-ibrahim')">
-              <img src="images/ibrahim-h-yunus.jpeg" alt="Ibrahim H. Yunus" class="w-16 h-16 rounded-full object-cover border-2 border-primary/20 shrink-0" 
-                   onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'64\' height=\'64\'><circle cx=\'32\' cy=\'32\' r=\'32\' fill=\'%23003399\'/><text x=\'50%\' y=\'54%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'white\' font-size=\'18\' font-family=\'Arial\'>IHY</text></svg>';" />
+              <img src="images/ibrahim-h-yunus.jpeg" alt="Ibrahim H. Yunus" class="w-16 h-16 rounded-full object-cover border-2 border-primary/20 shrink-0" />
               <div class="flex-1">
                 <h4 class="font-bold text-[18px] text-primary group-hover:underline">Ibrahim H. Yunus 🔍</h4>
                 <p class="text-primary/80 text-[16px]">Chercheur et expert en relations internationales.</p>
@@ -200,7 +210,6 @@
               </div>
             </div>
 
-            <!-- Membre ordinaire : Brunel Kalekina -->
             <div class="flex items-center gap-5 cursor-pointer group pt-4 border-t border-primary/10" onclick="toggleBio('bio-brunel')">
               <img src="images/brunel-kalekina.jpeg" alt="Brunel Kalekina" class="w-16 h-16 rounded-full object-cover border-2 border-primary/20 shrink-0" />
               <div class="flex-1">
@@ -219,7 +228,6 @@
     </div>
   </main>
 
-  <!-- Script pour afficher/masquer les profils au clic -->
   <script>
     function toggleBio(id) {
       const bioElement = document.getElementById(id);
@@ -231,9 +239,6 @@
     }
   </script>
 
-  <!-- ═══════════════════════════════════════
-       PIED DE PAGE (FOOTER)
-  ════════════════════════════════════════ -->
   <footer class="bg-primary text-white py-8 mt-20 text-center text-sm">
     <p>© 2026 institut théophile obenga. tous droits réservés.</p>
   </footer>
